@@ -55,8 +55,9 @@ function Signup() {
         }
     }
     return (
+        <div className='flex justify-center items-center'>
         <div className='container'>
-            <h1>Signup</h1>
+            <h1 className='text-5xl text-center font-bold'>Signup</h1>
             <form onSubmit={handleSignup}>
                 <div>
                     <label htmlFor='name'>Name</label>
@@ -95,6 +96,7 @@ function Signup() {
                 </span>
             </form>
             <ToastContainer />
+        </div>
         </div>
     )
 }

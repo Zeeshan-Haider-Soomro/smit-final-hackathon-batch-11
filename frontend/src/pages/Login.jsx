@@ -58,8 +58,9 @@ function Login() {
     }
 
     return (
+        <div className='flex justify-center items-center m-auto'>
         <div className='container'>
-            <h1>Login</h1>
+            <h1 className='text-5xl text-center font-bold'>Login</h1>
             <form onSubmit={handleLogin}>
                 <div>
                     <label htmlFor='email'>Email</label>
@@ -87,6 +88,7 @@ function Login() {
                 </span>
             </form>
             <ToastContainer />
+        </div>
         </div>
     )
 }
