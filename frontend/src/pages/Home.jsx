@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { handleError, handleSuccess } from '../utils';
 import { ToastContainer } from 'react-toastify';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Home() {
 
@@ -85,6 +87,7 @@ function Home() {
 
     return (
         <div>
+           <Header/>
            <div className='flex justify-center items-center gap-5'>
            <h1>Welcome {loggedInUser}</h1>
            <button onClick={handleLogout}>Logout</button>
@@ -147,7 +150,9 @@ function Home() {
                 } */}
 
             </div>
+            <Footer/>
             <ToastContainer />
+
         </div>
     )
 }
